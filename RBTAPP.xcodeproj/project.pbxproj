@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8FE205321748EF40067F221 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FE205221748EF40067F221 /* BaseViewController.swift */; };
 		BA763E1A217484C800457773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA763E19217484C800457773 /* AppDelegate.swift */; };
 		BA763E1C217484C800457773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA763E1B217484C800457773 /* ViewController.swift */; };
 		BA763E1F217484C900457773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA763E1D217484C900457773 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		4EE67F684531207AE0BBFB6E /* Pods-RBTAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBTAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBTAPP/Pods-RBTAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		B8FE205221748EF40067F221 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BA763E16217484C800457773 /* RBTAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBTAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA763E19217484C800457773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA763E1B217484C800457773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		B8FE204D21748E290067F221 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B8FE205221748EF40067F221 /* BaseViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				BA763E1C217484C800457773 /* ViewController.swift in Sources */,
 				BA763E1A217484C800457773 /* AppDelegate.swift in Sources */,
+				B8FE205321748EF40067F221 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
