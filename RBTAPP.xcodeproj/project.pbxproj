@@ -48,6 +48,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B8FE204D21748E290067F221 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8FE204E21748E2B0067F221 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B8FE204F21748E2D0067F221 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8FE205021748E2F0067F221 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B8FE205121748E310067F221 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		BA763E0D217484C800457773 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +104,11 @@
 		BA763E18217484C800457773 /* RBTAPP */ = {
 			isa = PBXGroup;
 			children = (
+				B8FE205121748E310067F221 /* API */,
+				B8FE205021748E2F0067F221 /* Utilities */,
+				B8FE204F21748E2D0067F221 /* Models */,
+				B8FE204E21748E2B0067F221 /* View Models */,
+				B8FE204D21748E290067F221 /* Views */,
 				BA763E19217484C800457773 /* AppDelegate.swift */,
 				BA763E1B217484C800457773 /* ViewController.swift */,
 				BA763E1D217484C900457773 /* Main.storyboard */,
