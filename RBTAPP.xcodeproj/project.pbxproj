@@ -12,9 +12,11 @@
 		BA763E1F217484C900457773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA763E1D217484C900457773 /* Main.storyboard */; };
 		BA763E21217484CA00457773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA763E20217484CA00457773 /* Assets.xcassets */; };
 		BA763E24217484CA00457773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA763E22217484CA00457773 /* LaunchScreen.storyboard */; };
+		E4D33C54181E305A88E60C11 /* Pods_RBTAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EB8731FECAF93DAD979066 /* Pods_RBTAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EE67F684531207AE0BBFB6E /* Pods-RBTAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBTAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBTAPP/Pods-RBTAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		BA763E16217484C800457773 /* RBTAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBTAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA763E19217484C800457773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA763E1B217484C800457773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		BA763E20217484CA00457773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA763E23217484CA00457773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA763E25217484CA00457773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EB8731FECAF93DAD979066 /* Pods_RBTAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBTAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63AD637B2DE546FE0404CCC /* Pods-RBTAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBTAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBTAPP/Pods-RBTAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D33C54181E305A88E60C11 /* Pods_RBTAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		595A158EA4B0A01EA49687BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB8731FECAF93DAD979066 /* Pods_RBTAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA763E0D217484C800457773 = {
 			isa = PBXGroup;
 			children = (
 				BA763E18217484C800457773 /* RBTAPP */,
 				BA763E17217484C800457773 /* Products */,
+				C9A3F0CA2749F43A9F5E42F5 /* Pods */,
+				595A158EA4B0A01EA49687BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = RBTAPP;
 			sourceTree = "<group>";
 		};
+		C9A3F0CA2749F43A9F5E42F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EE67F684531207AE0BBFB6E /* Pods-RBTAPP.debug.xcconfig */,
+				E63AD637B2DE546FE0404CCC /* Pods-RBTAPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA763E28217484CA00457773 /* Build configuration list for PBXNativeTarget "RBTAPP" */;
 			buildPhases = (
+				35F4A5A08D64C3A00AA1A418 /* [CP] Check Pods Manifest.lock */,
 				BA763E12217484C800457773 /* Sources */,
 				BA763E13217484C800457773 /* Frameworks */,
 				BA763E14217484C800457773 /* Resources */,
+				CD76B64EE87C2F0D64C2E4DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F4A5A08D64C3A00AA1A418 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBTAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD76B64EE87C2F0D64C2E4DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RBTAPP/Pods-RBTAPP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBTAPP/Pods-RBTAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA763E12217484C800457773 /* Sources */ = {
@@ -278,6 +357,7 @@
 		};
 		BA763E29217484CA00457773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE67F684531207AE0BBFB6E /* Pods-RBTAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +375,7 @@
 		};
 		BA763E2A217484CA00457773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63AD637B2DE546FE0404CCC /* Pods-RBTAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
