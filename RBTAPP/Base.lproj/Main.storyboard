@@ -543,5 +543,54 @@ Taxes &amp; Fees</string>
             </objects>
             <point key="canvasLocation" x="3773.5999999999999" y="26.53673163418291"/>
         </scene>
+        <!--Base View Controller-->
+        <scene sceneID="ett-Ff-h1B">
+            <objects>
+                <viewController id="Cls-hs-QF6" customClass="BaseViewController" customModule="RBTAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gS-RC-zbh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FeedBack" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djT-O5-iH9">
+                                <rect key="frame" x="127" y="28" width="129" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGs-bJ-24O">
+                                <rect key="frame" x="16" y="96" width="343" height="30"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-Gc-mNR">
+                                <rect key="frame" x="16" y="558" width="343" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="djT-O5-iH9" firstAttribute="top" secondItem="Gdh-W8-uTw" secondAttribute="top" constant="8" id="3wU-jt-GIR"/>
+                            <constraint firstItem="e1Z-Gc-mNR" firstAttribute="top" secondItem="UGs-bJ-24O" secondAttribute="bottom" constant="432" id="Eqe-kf-0ID"/>
+                            <constraint firstItem="Gdh-W8-uTw" firstAttribute="trailing" secondItem="e1Z-Gc-mNR" secondAttribute="trailing" constant="16" id="PE4-L8-BF6"/>
+                            <constraint firstItem="Gdh-W8-uTw" firstAttribute="trailing" secondItem="djT-O5-iH9" secondAttribute="trailing" constant="119" id="PRZ-Dd-Pdq"/>
+                            <constraint firstItem="UGs-bJ-24O" firstAttribute="top" secondItem="djT-O5-iH9" secondAttribute="bottom" constant="32" id="UWK-o9-o69"/>
+                            <constraint firstItem="e1Z-Gc-mNR" firstAttribute="leading" secondItem="Gdh-W8-uTw" secondAttribute="leading" constant="16" id="WW8-5x-7fa"/>
+                            <constraint firstItem="djT-O5-iH9" firstAttribute="leading" secondItem="Gdh-W8-uTw" secondAttribute="leading" constant="127" id="ceR-Vm-6Vh"/>
+                            <constraint firstItem="Gdh-W8-uTw" firstAttribute="trailing" secondItem="UGs-bJ-24O" secondAttribute="trailing" constant="16" id="ghQ-De-rDy"/>
+                            <constraint firstItem="UGs-bJ-24O" firstAttribute="leading" secondItem="Gdh-W8-uTw" secondAttribute="leading" constant="16" id="lgP-x4-OPB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gdh-W8-uTw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6t-XI-6tB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4429.6000000000004" y="27.436281859070466"/>
+        </scene>
     </scenes>
 </document>
