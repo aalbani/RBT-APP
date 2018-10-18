@@ -592,5 +592,57 @@ Taxes &amp; Fees</string>
             </objects>
             <point key="canvasLocation" x="4429.6000000000004" y="27.436281859070466"/>
         </scene>
+        <!--Base View Controller-->
+        <scene sceneID="fXy-iO-rAE">
+            <objects>
+                <viewController id="07S-yj-FB4" customClass="BaseViewController" customModule="RBTAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s3A-t9-iuY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket Plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ex-IX-nob">
+                                <rect key="frame" x="117" y="28" width="141" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ix-Mk-5mr">
+                                <rect key="frame" x="16" y="267" width="343" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="One Day"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFe-dk-TuO">
+                                <rect key="frame" x="16" y="382" width="343" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="One Week"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elM-cF-CIO">
+                                <rect key="frame" x="16" y="152" width="343" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="One Trip"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="urM-sh-l7q" firstAttribute="trailing" secondItem="4ix-Mk-5mr" secondAttribute="trailing" constant="16" id="6in-Wb-9hm"/>
+                            <constraint firstItem="urM-sh-l7q" firstAttribute="trailing" secondItem="elM-cF-CIO" secondAttribute="trailing" constant="16" id="BMN-sp-Jzy"/>
+                            <constraint firstItem="OFe-dk-TuO" firstAttribute="top" secondItem="4ix-Mk-5mr" secondAttribute="bottom" constant="64" id="RLg-d7-Uox"/>
+                            <constraint firstItem="OFe-dk-TuO" firstAttribute="leading" secondItem="urM-sh-l7q" secondAttribute="leading" constant="16" id="Tgs-UQ-I2u"/>
+                            <constraint firstItem="elM-cF-CIO" firstAttribute="top" secondItem="1ex-IX-nob" secondAttribute="bottom" constant="88" id="VtS-vb-eLU"/>
+                            <constraint firstItem="4ix-Mk-5mr" firstAttribute="top" secondItem="elM-cF-CIO" secondAttribute="bottom" constant="64" id="XHh-Rn-lVQ"/>
+                            <constraint firstItem="urM-sh-l7q" firstAttribute="trailing" secondItem="OFe-dk-TuO" secondAttribute="trailing" constant="16" id="Xuc-vS-oTv"/>
+                            <constraint firstItem="1ex-IX-nob" firstAttribute="leading" secondItem="urM-sh-l7q" secondAttribute="leading" constant="117" id="any-9Y-38o"/>
+                            <constraint firstItem="elM-cF-CIO" firstAttribute="leading" secondItem="urM-sh-l7q" secondAttribute="leading" constant="16" id="b56-Ih-UGr"/>
+                            <constraint firstItem="4ix-Mk-5mr" firstAttribute="leading" secondItem="urM-sh-l7q" secondAttribute="leading" constant="16" id="huw-G4-CPx"/>
+                            <constraint firstItem="urM-sh-l7q" firstAttribute="trailing" secondItem="1ex-IX-nob" secondAttribute="trailing" constant="117" id="jRa-1S-Hm7"/>
+                            <constraint firstItem="1ex-IX-nob" firstAttribute="top" secondItem="urM-sh-l7q" secondAttribute="top" constant="8" id="sn5-Ig-cro"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="urM-sh-l7q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoN-vA-4de" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5077.6000000000004" y="27.436281859070466"/>
+        </scene>
     </scenes>
 </document>
