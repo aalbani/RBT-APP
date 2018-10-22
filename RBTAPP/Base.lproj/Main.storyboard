@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nnh-aK-dUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="27.436281859070466"/>
+            <point key="canvasLocation" x="1382" y="810"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="3Wh-g3-qwj">
@@ -387,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fz-7o-qJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376.8000000000002" y="27.436281859070466"/>
+            <point key="canvasLocation" x="2153" y="809"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="Rdy-kj-Mnp">
@@ -398,23 +398,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="servies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpF-HF-ljf">
-                                <rect key="frame" x="141" y="28" width="92" height="36"/>
+                                <rect key="frame" x="141" y="72" width="92" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUL-YQ-76y">
-                                <rect key="frame" x="16" y="128" width="343" height="51"/>
+                                <rect key="frame" x="16" y="172" width="343" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Buy Ticket"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCK-Jz-9I8">
-                                <rect key="frame" x="16" y="243" width="343" height="51"/>
+                                <rect key="frame" x="16" y="287" width="343" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Order Bus"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWp-Ya-35D">
-                                <rect key="frame" x="16" y="358" width="343" height="51"/>
+                                <rect key="frame" x="16" y="402" width="343" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Feedback"/>
                             </button>
@@ -441,10 +441,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IMK-Il-Nmz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6qB-0C-TGv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZu-dE-AFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3045.5999999999999" y="27.436281859070466"/>
+            <point key="canvasLocation" x="2889" y="28"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bRO-4e-26A">
@@ -541,7 +542,33 @@ Taxes &amp; Fees</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdq-te-rVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3773.5999999999999" y="26.53673163418291"/>
+            <point key="canvasLocation" x="4526" y="-495"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O6Z-Yt-t0m">
+            <objects>
+                <viewController id="GSg-ed-Mkp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xJ-EM-J60">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-O6-M5T">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cW6-jL-DCn" firstAttribute="bottom" secondItem="K5c-O6-M5T" secondAttribute="bottom" id="29o-bI-TgI"/>
+                            <constraint firstItem="K5c-O6-M5T" firstAttribute="leading" secondItem="cW6-jL-DCn" secondAttribute="leading" id="3QB-0z-nZu"/>
+                            <constraint firstItem="K5c-O6-M5T" firstAttribute="top" secondItem="cW6-jL-DCn" secondAttribute="top" id="tUc-oj-KYJ"/>
+                            <constraint firstItem="cW6-jL-DCn" firstAttribute="trailing" secondItem="K5c-O6-M5T" secondAttribute="trailing" id="xup-Dk-1hl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cW6-jL-DCn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wu-W5-Y08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3590" y="27"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="ett-Ff-h1B">
@@ -557,40 +584,37 @@ Taxes &amp; Fees</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGs-bJ-24O">
-                                <rect key="frame" x="16" y="96" width="343" height="30"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-Gc-mNR">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-Gc-mNR">
                                 <rect key="frame" x="16" y="558" width="343" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="srF-1q-hgE">
+                                <rect key="frame" x="71" y="384" width="240" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="djT-O5-iH9" firstAttribute="top" secondItem="Gdh-W8-uTw" secondAttribute="top" constant="8" id="3wU-jt-GIR"/>
-                            <constraint firstItem="e1Z-Gc-mNR" firstAttribute="top" secondItem="UGs-bJ-24O" secondAttribute="bottom" constant="432" id="Eqe-kf-0ID"/>
                             <constraint firstItem="Gdh-W8-uTw" firstAttribute="trailing" secondItem="e1Z-Gc-mNR" secondAttribute="trailing" constant="16" id="PE4-L8-BF6"/>
                             <constraint firstItem="Gdh-W8-uTw" firstAttribute="trailing" secondItem="djT-O5-iH9" secondAttribute="trailing" constant="119" id="PRZ-Dd-Pdq"/>
-                            <constraint firstItem="UGs-bJ-24O" firstAttribute="top" secondItem="djT-O5-iH9" secondAttribute="bottom" constant="32" id="UWK-o9-o69"/>
                             <constraint firstItem="e1Z-Gc-mNR" firstAttribute="leading" secondItem="Gdh-W8-uTw" secondAttribute="leading" constant="16" id="WW8-5x-7fa"/>
                             <constraint firstItem="djT-O5-iH9" firstAttribute="leading" secondItem="Gdh-W8-uTw" secondAttribute="leading" constant="127" id="ceR-Vm-6Vh"/>
-                            <constraint firstItem="Gdh-W8-uTw" firstAttribute="trailing" secondItem="UGs-bJ-24O" secondAttribute="trailing" constant="16" id="ghQ-De-rDy"/>
-                            <constraint firstItem="UGs-bJ-24O" firstAttribute="leading" secondItem="Gdh-W8-uTw" secondAttribute="leading" constant="16" id="lgP-x4-OPB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gdh-W8-uTw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6t-XI-6tB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4429.6000000000004" y="27.436281859070466"/>
+            <point key="canvasLocation" x="3590" y="832"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="fXy-iO-rAE">
@@ -642,7 +666,25 @@ Taxes &amp; Fees</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoN-vA-4de" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5077.6000000000004" y="27.436281859070466"/>
+            <point key="canvasLocation" x="3590" y="-693"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d0u-hW-PqB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l95-N7-Xbe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d2M-uy-X1M">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WSD-NO-7d1" kind="relationship" relationship="rootViewController" id="jBq-cA-oU6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6j-Xf-zUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="27"/>
         </scene>
     </scenes>
 </document>
